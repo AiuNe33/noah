@@ -1,0 +1,29 @@
+/* Quiet vertical motion and translucent ink across every text leaf. */
+.floating-type{display:inline-block;white-space:pre-wrap;opacity:.68;animation:text-drift var(--float-duration,8s) ease-in-out var(--float-delay,0s) infinite}
+@keyframes text-drift{0%,100%{translate:0 4px}50%{translate:0 -5px}}
+h1 .floating-type{opacity:.54;animation-name:title-drift}
+@keyframes title-drift{0%,100%{translate:0 6px}50%{translate:0 -8px}}
+
+
+
+
+
+
+.hero .orbit-one{width:590px;height:205px;top:44%;border-color:#d6d1c3}
+.hero .orbit-two{width:485px;height:235px;top:44%;border-color:#e0dbd0}
+.hero .label-left{top:32%}.hero .label-right{top:43%;right:3%}.hero .scribble{bottom:12%;left:26%}
+.tennis{background:radial-gradient(ellipse at 72% 45%,#f2f1e7 0%,#e8ede2 47%,#e0e7d9 100%)}
+.court{right:-1%;width:71%;top:185px;height:570px;perspective:none}
+.real-table{width:100%;height:100%;overflow:visible;position:absolute;inset:0;filter:drop-shadow(0 20px 23px #3143320a)}
+.paddle{background:radial-gradient(circle,#344941 0 .6px,transparent .9px) 0 0/3px 3px,radial-gradient(ellipse at 35% 20%,#6b7e6e,#334e42 75%);border-color:#c7a373;box-shadow:inset 0 0 0 2px #253b31,inset 4px 7px 16px #ffffff17,2px 4px 0 #6e5139,4px 6px 0 #d5b882,7px 10px 1px #514536,14px 25px 22px #324a3228}
+.paddle:after{background:repeating-linear-gradient(91deg,#b18a5e 0px,#d5b47b 2px,#e4c993 4px,#bf9b65 6px);box-shadow:3px 3px 0 #806344,inset 1px 0 0 #efd7ad;border:1px solid #b08c5b}
+.paddle:before{content:'';position:absolute;inset:4px;border-radius:50%;background:linear-gradient(120deg,#fff2,transparent 45%,#0001);pointer-events:none}
+.paddle.near{width:136px;height:154px;right:21%;bottom:63px;transform:rotate(-30deg)}
+.paddle.near:after{left:49px;top:140px;height:84px}
+.paddle.far{left:43%;top:0;background:radial-gradient(circle,#813b31 0 .6px,transparent .9px) 0 0/3px 3px,radial-gradient(ellipse at 30% 20%,#c57862,#8c4037 80%)}
+.ping-ball{right:31%;top:48%;width:37px;height:37px;background:radial-gradient(circle at 30% 22%,#fffffc 10%,#f0eee3 57%,#d0d4c6 87%);box-shadow:inset -2px -3px 4px #b0b6a333,2px 3px 3px #4350370a}
+.ping-ball:after{content:'';position:absolute;left:5px;top:7px;right:5px;bottom:7px;border:1px solid #e2e3d699;border-radius:50%;transform:rotate(-25deg)}
+.ball-shadow{right:31%;top:69%}.court-note{right:17%;bottom:8px}
+@media(max-width:900px){.court{width:100%;top:310px;right:-7%;height:490px}.hero .label-left{top:5%}.hero .orbit-one{width:430px}.hero .orbit-two{width:365px}.hero .scribble{left:10%;bottom:10%}}
+@media(max-width:600px){.hero .orbit-one{width:315px;height:150px;top:52%}.hero .orbit-two{width:280px;height:190px;top:52%}.hero .label-left{top:0}.hero .scribble{left:2%;bottom:4%}.court{width:118%;right:-11%;top:325px;height:390px}.paddle.near{right:23%;bottom:24px;scale:.64}.paddle.far{left:40%;top:-10%;scale:.74}.ping-ball{width:28px;height:28px;right:33%;top:47%}.ball-shadow{right:33%;top:65%}.court-note{bottom:-5px;right:26%}.travel-dots{gap:4px}.floating-type{will-change:auto}}
+@media(prefers-reduced-motion:reduce){.floating-type,.floating-type{will-change:auto}}

@@ -1,0 +1,16 @@
+.tennis-canvas{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:pan-y;outline:0}
+.webgl-ready .table-dimension,.webgl-ready .table-floor,.webgl-ready>.ping-ball,.webgl-ready>.ball-shadow,.webgl-ready>.paddle.far{display:none}
+.court.webgl-ready{width:76%;height:690px;right:-3%;top:145px;perspective:none}
+.webgl-ready>.paddle.near{width:104px;height:135px;position:absolute;right:auto;bottom:auto;background:transparent;border:0;box-shadow:none;transform:translate(-50%,-45%);scale:1;z-index:3;cursor:pointer;border-radius:45%;animation:none!important;transition:outline .2s}
+.webgl-ready>.paddle.near:before,.webgl-ready>.paddle.near:after{display:none}
+.webgl-ready>.paddle.near:hover{filter:none;outline:1px solid #81967877;outline-offset:6px}
+.webgl-ready>.paddle.near:focus-visible{outline:2px solid #527968;outline-offset:8px}
+.webgl-ready>.paddle.near[aria-disabled=true]{cursor:default;outline:none}
+.webgl-ready .court-note{right:13%;bottom:5px;font-size:9px;opacity:.7;transform:none;pointer-events:none}
+.artist-list>button{font-size:clamp(43px,4.3vw,72px);line-height:1.1;padding:29px 0;letter-spacing:-.045em}
+.artist-list>button>.floating-type{font-family:inherit;font-size:inherit;font-weight:inherit;line-height:inherit;letter-spacing:inherit}
+.artist-list{padding-right:42px}.artist-list>button>span:first-child{font-size:10px;align-self:flex-start;padding-top:8px}.artist-list>button>span:last-child{font-size:25px;flex-shrink:0}
+.music-layout{grid-template-columns:40% 60%}.artist-list>button[aria-selected=true] .floating-type{opacity:.85}#music-label{font-family:var(--art-font);font-size:30px;line-height:1.2}
+@media(max-width:1100px){.artist-list{padding-right:30px}.artist-list>button{font-size:44px}.court.webgl-ready{width:85%;right:-10%;height:660px;top:205px}}
+@media(max-width:900px){.court.webgl-ready{width:116%;right:-8%;height:580px;top:300px}.music-layout{grid-template-columns:43% 57%}.artist-list>button{font-size:39px}.artist-list{padding-right:24px}.webgl-ready .court-note{right:17%;bottom:12px}}
+@media(max-width:600px){.court.webgl-ready{width:116%;right:-8%;height:455px;top:320px}.tennis{min-height:880px}.webgl-ready>.paddle.near{width:66px;height:88px}.webgl-ready .court-note{bottom:10px;right:15%;font-size:7px}.artist-list{padding:0;gap:18px}.artist-list>button{font-size:35px;width:calc(50% - 9px);padding:17px 0;letter-spacing:-.06em}.artist-list>button>span:last-child{font-size:17px}.music-layout{display:flex}#music-label{font-size:27px}}
